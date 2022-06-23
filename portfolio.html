@@ -12,27 +12,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
-      <nav class="site-nav">
-        <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span> </a>
-        <ul class="ul-site">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a href="./index.html" class="logo" lang="en">Web<span class="logo-span">Studio</span> </a>
+        <nav class="menu-nav">
+          <ul class="ul-site">
+            <li class="header-item">
+              <a href="./index.html" class="header-link">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link current">Портфолио</a>
+            </li>
+            <li class="header-item"><a href="" class="header-link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contacts">
-        <li><a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="contacts">
+          <li><a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section-list">
         <h1 class="visually-hidden">Работы</h1>
         <ul class="title-list">
           <li><button class="all" type="button">Все</button></li>
@@ -41,7 +51,8 @@
           <li><button class="design" type="button">Дизайн</button></li>
           <li><button class="marketing" type="button">Маркетинг</button></li>
         </ul>
-
+      </section>
+      <section class="section-projects">
         <ul class="list-projects">
           <li>
             <a href="">
@@ -111,7 +122,7 @@
     </main>
 
     <footer>
-      <a href="./index.html" class="logo">Web<span class="span-footer">Studio</span> </a>
+      <a href="./index.html" class="logo" lang="en">Web<span class="span-footer">Studio</span> </a>
       <address class="contacts-footer">
         <ul>
           <li>
