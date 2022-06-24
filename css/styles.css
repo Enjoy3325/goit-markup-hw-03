@@ -36,18 +36,25 @@ body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   letter-spacing: 0.03em;
 }
-.container {
+.container-header {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  box-sizing: border-box;
+  margin: auto;
+
+  background-color: brown;
+
+  /* box-sizing: border-box; */
 
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
+  margin-top: 24px;
 }
 .page-header .container {
   align-items: center;
   margin-top: 24px;
+  width: 1600px;
 }
 /* -------------------------------------------------------------СПРЯТАННЫЕ ЗАГОЛОВКИ h2,h1---------------------------------------------------------- */
 .visually-hidden {
@@ -61,6 +68,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------ЛОГОТИП------------------------------------------------------------------ */
@@ -75,7 +83,7 @@ body {
   text-decoration: none;
   line-height: 1.19;
 
-  margin-bottom: 33px;
+  margin-right: 93px;
 }
 .logo:hover,
 .logo:focus {
@@ -116,10 +124,12 @@ body {
   width: 294px;
   line-height: 1.14;
   vertical-align: middle;
-
-  margin-left: 93px;
   margin-right: 332px;
-  margin-bottom: 40px;
+  text-align: center;
+
+  /* margin-left: 93px;
+  
+  margin-bottom: 40px; */
 }
 .menu-nav:not(:first-child) {
   align-content: center;
@@ -137,21 +147,26 @@ a {
 /* -------------------------------------------------------------------ГЕРОЙ------------------------------------------------------------ */
 .hero {
   background: var(--fluoric-background-color);
-
   /* padding: 200px o; */
+  text-align: center;
   width: 1600px;
   height: 600px;
+  margin-bottom: 94px;
 }
 .container-hero {
   text-align: center;
 
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
   justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  background-color: darkblue;
 }
 
 .decision {
@@ -168,6 +183,7 @@ a {
   justify-content: center;
 
   margin-top: 0px;
+  margin: auto;
   margin-bottom: 30px;
 }
 .title-list h3 {
@@ -216,9 +232,9 @@ ul {
 
   padding: 10px 32px;
   display: block;
-  margin: 0;
+  margin: auto;
   min-width: 200px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .issue:hover,
 .issue:focus {
@@ -226,6 +242,21 @@ ul {
 }
 
 /* -----------------------------------------------------------------ЧЕМ МЫ ЗАНИМАЕМСЯ------------------------------------------------------- */
+.container-visually {
+  display: flex;
+  width: 1230px;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: gold;
+
+  margin-bottom: 94px;
+}
 .visually {
   color: var(--title-text-color);
 
@@ -233,10 +264,43 @@ ul {
   font-size: 36px;
   line-height: 1.16;
 
+  margin: 0;
   text-transform: uppercase;
 }
+li .visually {
+  padding-bottom: 10px;
+}
+
 .list-p {
   line-height: 1.71;
+  margin: 0;
+  padding-right: 30px;
+}
+.container-title {
+  /* display: flex; */
+  width: 1230px;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-list-img {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.img-one,
+.img-two,
+.img-three {
+  background-color: fuchsia;
+  padding-right: 30px;
+  text-align: center;
+  display: flex;
+  margin-bottom: 94px;
 }
 .title-comand {
   color: var(--title-text-color);
@@ -247,14 +311,56 @@ ul {
   letter-spacing: 0.03em;
 
   text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.title-list {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 /* -------------------------------------------------------------------НАША КОМАНДА------------------------------------------------ */
 .section-employee {
   background: var(--fone-comand-color);
+  text-align: center;
+  width: 1600px;
+  margin: 0;
+  padding: 0;
+}
+.div-employee {
+  background-color: blueviolet;
+
+  width: 1230px;
+  padding: 0;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding-bottom: 50px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.employee-one,
+.employee-two,
+.employee-three,
+.employee-four {
+  padding: 0;
+  margin: 0;
+  padding-right: 30px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .title-list-employee {
   background: var(--white-color);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  /* background-color: orangered; */
 }
 .title-list-employee h2 {
   color: var(--title-text-color);
@@ -269,6 +375,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
+  padding-bottom: 10px;
 }
 .employee {
   line-height: 1.19;
@@ -374,13 +482,14 @@ ul {
  width: 307px; */
   margin-left: 0;
   margin-right: 0;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
+  text-align: right;
 }
 
 .contacts-item {
   display: flex;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .tel:hover,
@@ -409,7 +518,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   width: 135px;
-  /* margin-right: 50px; */
+  margin-right: 51px;
 }
 
 .hidden-h2 {
