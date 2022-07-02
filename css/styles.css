@@ -37,34 +37,46 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .container-header {
   display: flex;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 
-  margin: 0;
+  padding: 0 15px;
+  margin: 0 auto;
 
   align-items: center;
   justify-content: center;
-  margin: auto;
 
   /* box-sizing: border-box; */
 }
 
 .page-header .container {
   align-items: center;
+  display: flex;
+    
+}
   /* margin-top: 24px; */
   /* width: 1600px; */
 }
 .section {
-  /* padding-bottom: 94px; */
   padding-top: 94px;
+}
+.section-list {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.hero-section {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-items: center;
+
+  background-color: var(--fluoric-background-color);
 }
 .pro {
   padding-bottom: 94px;
@@ -105,12 +117,15 @@ body {
 }
 .logo-footer {
   color: var(--accent-color);
+
+  display: block;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   width: 145px;
 
+  margin-bottom: 20px;
   text-decoration: none;
   line-height: 1.19;
 }
@@ -175,6 +190,8 @@ body {
 }
 .ul-site .header-item {
   display: inline-block;
+}
+.header-item > a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -214,12 +231,9 @@ a {
   width: 1200px;
   justify-content: center;
   text-align: center;
-
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--fluoric-background-color);
+  padding: 0 15px;
+  margin: 0 auto;
   /* margin-bottom: 94px; */
 }
 
@@ -280,7 +294,7 @@ a {
 }
 
 /* -----------------------------------------------------------------ЧЕМ МЫ ЗАНИМАЕМСЯ------------------------------------------------------- */
-.container-visually {
+/* .container-visually {
   width: 1200px;
   display: flex;
   padding: 0;
@@ -292,8 +306,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-}
-.container-visually > li {
+} */
+/* .container-visually > li {
   width: 270px;
 
   display: flex;
@@ -302,7 +316,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
 
 .visually {
@@ -405,16 +419,16 @@ li .visually {
   padding-bottom: 94px;
 }
 .div-employee {
-  width: 1200px;
-  padding: 0;
-  margin: 0;
+  /* width: 1200px; */
+  /* padding: 0;
+  margin: 0; */
   padding-left: 15px;
   padding-right: 15px;
   /* padding-bottom: 50px; */
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  justify-content: center;
+  /* text-align: center;
+  justify-content: center; */
 }
 .employee-one,
 .employee-two,
@@ -590,6 +604,10 @@ li .visually {
   justify-content: center;
   text-align: right;
 }
+.contacts-item > a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .contacts-item {
   display: flex;
@@ -633,7 +651,18 @@ li .visually {
 }
 
 /* -------------------------------------------------------------------ФУТЕР----------------------------------------------------------------*/
-footer {
+.page-footer {
+  display: block;
+  /* max-width: 1600px; */
+  /* justify-content: left; */
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* text-align: left;
+  align-items: center; */
+
   background: var(--fluoric-background-color);
 }
 
@@ -645,6 +674,7 @@ footer {
 
   text-align: left;
   justify-content: left;
+
 }
 .mailto-footer:hover,
 .mailto-footer:focus {
@@ -652,6 +682,7 @@ footer {
 }
 .mailto-footer {
   color: var(--footer-contacts-color);
+  margin-bottom: 9px;
 }
 
 .tel-footer:hover,
@@ -662,27 +693,23 @@ footer {
 .tel-footer {
   color: var(--footer-contacts-color);
   text-decoration: none;
+  margin-bottom: 9px;
 }
 
 .maps {
   color: var(--white-color);
+  margin-bottom: 9px;
 }
 .maps:hover,
 .maps:focus {
   color: var(--accent-color);
 }
-.container-footer {
+/* .container-footer {
   width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
   justify-content: left;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: left;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
+} */
 .ul-footer {
   padding: 0;
 }
@@ -702,9 +729,8 @@ footer {
 }
 .conteiner-projects {
   width: 1200px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  margin: auto;
+  padding: 0 15px;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
   align-items: center;
