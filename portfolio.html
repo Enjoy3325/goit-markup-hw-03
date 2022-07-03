@@ -23,7 +23,7 @@
     <!--Шапка-->
     <header class="page-header">
       <div class="container">
-        <div class="container-header border">
+        <div class="container-header">
           <a href="./index.html" class="logo" lang="en"
             >Web<span class="logo-span">Studio</span>
           </a>
@@ -38,10 +38,13 @@
               <li class="header-item"><a href="" class="header-link">Контакты</a></li>
             </ul>
           </nav>
-
           <ul class="contacts">
-            <li><a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contacts-item">
+              <a class="mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -52,7 +55,7 @@
         <div class="container">
           <div class="title-button">
             <h1 class="visually-hidden">Работы</h1>
-            <ul class="title-list">
+            <ul class="title-list-btn">
               <li class="btn"><button class="all" type="button">Все</button></li>
               <li class="btn"><button class="web-sites" type="button">Веб-сайты</button></li>
               <li class="btn"><button class="applications" type="button">Приложения</button></li>
@@ -60,78 +63,137 @@
               <li class="btn"><button class="marketing" type="button">Маркетинг</button></li>
             </ul>
           </div>
-        </div>
-      </section>
-      <!-- Проекты -->
-      <section class="section pro">
-        <div class="container">
-          <div class="conteiner-projects">
-            <ul class="list-projects">
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img1.jpg" alt="Веб-сайт" width="370" height="294" />
+          <ul class="list-projects">
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img1.jpg"
+                  alt="Веб-сайт"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Технокряк</h2>
                   <p class="project">Веб-сайт</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img2.jpg" alt="Дизайн" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img class="no-gap" src="./images/img2.jpg" alt="Дизайн" width="370" height="294" />
+                <div class="examples-content">
                   <h2 class="name-project">Постер New Orlean vs Golden Star</h2>
                   <p class="project">Дизайн</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img3.jpg" alt="Приложение" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img3.jpg"
+                  alt="Приложение"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Ресторан Seafood</h2>
                   <p class="project">Приложение</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img4.jpg" alt="Проект-Prime" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img4.jpg"
+                  alt="Проект-Prime"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Проект Prime</h2>
                   <p class="project">Проект Prime</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img5.jpg" alt="Приложение-2" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img5.jpg"
+                  alt="Приложение-2"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Проект Boxes</h2>
                   <p class="project">Приложение</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img6.jpg" alt="Веб-сайт-2" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img6.jpg"
+                  alt="Веб-сайт-2"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Inspiration has no Borders</h2>
                   <p class="project">Веб-сайт</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img7.jpg" alt="Дизайн-2" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img7.jpg"
+                  alt="Дизайн-2"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Издание Limited Edition</h2>
                   <p class="project">Дизайн</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href="">
-                  <img src="./images/img8.jpg" alt="Маркетинг" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href="">
+                <img
+                  class="no-gap"
+                  src="./images/img8.jpg"
+                  alt="Маркетинг"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Проект LAB</h2>
                   <p class="project">Маркетинг</p>
-                </a>
-              </li>
-              <li class="flex-element">
-                <a href=""
-                  ><img src="./images/img9.jpg" alt="Приложение-3" width="370" height="294" />
+                </div>
+              </a>
+            </li>
+            <li class="flex-element">
+              <a href=""
+                ><img
+                  class="no-gap"
+                  src="./images/img9.jpg"
+                  alt="Приложение-3"
+                  width="370"
+                  height="294"
+                />
+                <div class="examples-content">
                   <h2 class="name-project">Growing Business</h2>
                   <p class="project">Приложение</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
