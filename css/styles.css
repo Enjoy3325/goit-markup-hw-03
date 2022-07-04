@@ -56,15 +56,16 @@ h6 {
 }
 
 .container-header {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 
   /* box-sizing: border-box;  */
 }
 
 .page-header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+  justify-content: center;
 }
 /* margin-top: 24px; */
 /* width: 1600px; */
@@ -75,17 +76,29 @@ h6 {
 }
 .section-list {
   padding-bottom: 94px;
-}
-.hero-section {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  align-items: center;
+}
+
+/* .photo {
+  width: 1600px;
+  height: 600px;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
   align-items: center;
 
-  background-color: var(--fluoric-background-color);
-}
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/icons.svg/photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
 .pro {
   padding-bottom: 94px;
 }
@@ -164,8 +177,12 @@ h6 {
 .header-link:focus {
   color: var(--accent-color);
 }
+.heder-menu {
+  display: flex;
+  align-items: center;
+}
 .menu-nav {
-  display: block;
+  display: flex;
   align-items: center;
   margin-right: 332px;
   justify-content: center;
@@ -183,8 +200,7 @@ h6 {
   margin-right: 0;
 }
 .ul-site {
-  display: block;
-  display: flex;
+  display: inherit;
   padding: 0;
   margin: 0;
 
@@ -212,35 +228,48 @@ ul {
 }
 
 .header-item {
-  /* margin-right: 50px; */
   justify-content: center;
 }
-.header-item:last-child {
-  margin-right: 0;
+.header-item :not(:last-child) {
+  margin-right: 50px;
 }
 a {
   text-decoration: none;
 }
 /* -------------------------------------------------------------------ГЕРОЙ------------------------------------------------------------ */
+.hero-section {
+  width: 1600px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-items: center;
+
+  background-color: var(--fluoric-background-color);
+}
 .hero.container {
   background: var(--fluoric-background-color);
-  max-width: 1600px;
+  /* max-width: 1600px; */
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   /* margin-bottom: 89px; */
 }
-/* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
 
 .container-hero {
   width: 1200px;
   justify-content: center;
   text-align: center;
+  align-items: center;
   color: var(--fluoric-background-color);
   padding: 0 15px;
   margin: 0 auto;
-  /* margin-bottom: 94px; */
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
 }
+
+/* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
 
 .decision {
   color: var(--white-color);
@@ -248,7 +277,7 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  width: 696px;
+  max-width: 696px;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -256,7 +285,7 @@ a {
   justify-content: center;
 
   margin-top: 0px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .title-list h3 {
@@ -323,13 +352,6 @@ justify-content: space-between;
   margin-right: 30px;
   margin-bottom: 30px; */
 
-
-
-.list-p {
-  line-height: 1.71;
-  margin: 0;
-  /* padding-right: 30px; */title-list-visuall
-}
 .container-title {
   width: 1200px;
   padding: 0;
@@ -360,6 +382,11 @@ justify-content: space-between;
 .title-list-img:last-child {
   margin-left: 0;
   margin-right: 0;
+}
+
+.list-p {
+  line-height: 1.71;
+  margin: 0;
 }
 .img-one,
 .img-two,
@@ -392,6 +419,7 @@ justify-content: space-between;
 }
 .visuallyty {
   line-height: 1.14;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -405,53 +433,47 @@ justify-content: space-between;
 .section-employee {
   background-color: var(--fone-comand-color);
   text-align: center;
+  padding-top: 94px;
   padding-bottom: 94px;
-}
-.div-employee {
-  /* width: 1200px; */
-  /* padding: 0;
-  margin: 0; */
-  padding-left: 15px;
-  padding-right: 15px;
-  /* padding-bottom: 50px; */
-  margin-left: auto;
+  margin: 0;
   margin-right: auto;
-  /* text-align: center;
-  justify-content: center; */
+  margin-left: auto;
 }
-.employee-one,
-.employee-two,
-.employee-three,
-.employee-four {
-  padding: 0;
-  margin: 0;
+
+.div-h-p {
+  padding-top: 30px;
   padding-bottom: 30px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 30px;
+  margin: 0 auto;
+
+  background-color: var(--white-color);
 }
-.employee-four {
-  margin-right: 0;
-}
-.employee {
-  margin: 0;
-  padding-bottom: 30px;
-}
+
 .title-list-employee {
-  background: var(--white-color);
+  /* background: var(--white-color); */
   display: flex;
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
+  justify-content: center;
+  text-align: center;
+  /* ;
+  padding-bottom: 30px;
+  margin-right: 30px; */
+
   text-align: center;
 }
-.title-list-employee.list-empl {
-  margin-right: 30px;
-  display: flex;
+
+.list-empl {
+  width: 270px;
   margin: 0;
   padding: 0;
   text-align: center;
 
   color: var(--white-color);
+}
+.list-empl:not(:last-child) {
+  margin-right: 30px;
 }
 .title-list-employee h2 {
   color: var(--title-text-color);
@@ -460,15 +482,28 @@ justify-content: space-between;
   font-size: 16px;
   line-height: 1.9;
 }
+.employee-one,
+.employee-two,
+.employee-three,
+.employee-four {
+  margin: 0;
+  padding: 0;
+}
 .team {
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
   margin: 0;
   padding-bottom: 10px;
 }
+.employee {
+  margin: 0;
+  color: var(--primary-text-color);
+}
+
 .employee {
   line-height: 1.19;
   font-size: 16px;
@@ -476,7 +511,8 @@ justify-content: space-between;
 .border {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-
+.div-employee {
+}
 /* -------------------------------------------------------------------КНОПКА РАЗДЕЛ "ВСЕ"---------------------------------------------- */
 
 .all:hover,
@@ -500,7 +536,7 @@ justify-content: space-between;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
 
@@ -512,7 +548,7 @@ justify-content: space-between;
   margin: 0;
   align-items: center;
   text-align: center;
-  margin-right: 8px;
+
   justify-content: center;
 }
 .marketing {
@@ -521,12 +557,12 @@ justify-content: space-between;
 .btn {
   /* align-items: center; */
   display: block;
-  margin-right: 8px;
+
   /* justify-content: center;
   text-align: center; */
 }
 .btn:not(:last-child) {
-  margin-right: 0;
+  margin-right: 8px;
 }
 
 /* ----------------------------------------------------------ХОВЕРЫ И ФОКУСЫ КНОПОК РАЗДЕЛОВ------------------------------ */
@@ -582,12 +618,17 @@ justify-content: space-between;
 
 .contacts {
   display: flex;
+  font-weight: 500;
   align-items: center;
   text-align: center;
   padding: 0;
   margin: 0;
   margin-left: auto;
   list-style: none;
+}
+.contacts-item {
+  margin: 0;
+  padding: 0;
 }
 .contacts .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -604,7 +645,7 @@ justify-content: space-between;
 .tel {
   color: var(--primary-text-color);
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -617,7 +658,7 @@ justify-content: space-between;
 .mailto {
   color: var(--primary-text-color);
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -639,6 +680,7 @@ justify-content: space-between;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
+
   padding-top: 60px;
   padding-bottom: 60px;
   /* text-align: left;
@@ -673,7 +715,6 @@ justify-content: space-between;
 .tel-footer {
   color: var(--footer-contacts-color);
   text-decoration: none;
-  margin-bottom: 9px;
 }
 
 .maps {
@@ -687,10 +728,9 @@ justify-content: space-between;
 
 .ul-footer {
   padding: 0;
+  margin: 0;
 }
-.ul-footer > li {
-  display: flex;
-}
+
 /* --------------------------------------------------------------ГЕРОЙ 2 СТРАНИЦА----------------------------------- */
 
 .title-list-btn {
@@ -700,16 +740,16 @@ justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
-.conteiner-projects {
+/* .conteiner-projects {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
   align-items: center;
-}
+} */
 .list-projects {
   display: flex;
   flex-wrap: wrap;
